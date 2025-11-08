@@ -1,0 +1,7 @@
+env/
+habitat-sim/
+habitat-lab/
+__pycache__/
+*.pyc
+*.pyo
+*.DS_Store
