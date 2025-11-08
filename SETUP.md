@@ -41,13 +41,13 @@ conda create --prefix "$(pwd)/env" python=3.9 cmake=3.14.0
 conda activate "$(pwd)/env"
 ```
 
-## 3. Install habitat-sim
+## 3. Install Habitat-Sim
 
 ```bash
 conda install -c conda-forge -c aihabitat-nightly habitat-sim=0.3.1 withbullet
 ```
 
-## 4. Install our forked habitat-lab
+## 4. Install our forked Habitat-Lab
 
 ```bash
 cd habitat-lab

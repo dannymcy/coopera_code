@@ -20,24 +20,30 @@ In this work, we introduce COOPERA, a framework for studying continual, open-end
 
 See [SETUP.md](SETUP.md) for instructions on setting up the conda environment.
 
-<!-- ### Prerequisites 
+### Download Habitat Datasets
 
-Prepare ```GPT API``` from [here](https://platform.openai.com/docs/api-reference/introduction) and put it in ```.../spatialpin/main/gpt_4/query.py``` line 7.
+See [DOWNLOAD.md](DOWNLOAD.md) for downloading required Habitat datasets.
 
-Open a public GitHub repo and put your Git token and repo name in ```.../spatialpin/main/process_3d.py``` line 476 and 477 (Github repo name is of format ```git_account_name/repo_name```).
+### Human Simulation
 
-Prepare ```One-2-3-45++ API``` for single-view object reconstruction from [here](https://www.sudo.ai/account) and put it in ```.../spatialpin/main/process_3d.py``` line 478.
+See [HUMAN.md](HUMAN.md) for simulating humans driven by psychological traits and long-term intentions. This step is a prerequisite for running the COOPERA benchmark. You may also stop here if you are only interested in human simulation.
 
-Download Segment Anything backbone by running ```.../spatialpin/main/download_sam.py``` -->
+### COOPERA Benchmark
+
+See [BENCHMARK.md](BENCHMARK.md) for running the COOPERA benchmark.
+
+## Visualize Results
+
+[Coming Soon] You may want to generate a video to visualize human-robot collaboration.
 
 ### Citation
 
 ```
 @inproceedings{ma2025coopera,
-  title={COOPERA: Continual Open-Ended Human-Robot Assistance},
-  author={Ma, Chenyang and Lu, Kai and Desai, Ruta and Puig, Xavier and Markham, Andrew and Trigoni, Niki},
-  booktitle={Proceedings of the Conference on Neural Information Processing Systems (NeurIPS)},
-  year={2025},
+  title     = {COOPERA: Continual Open-Ended Human-Robot Assistance},
+  author    = {Ma, Chenyang and Lu, Kai and Desai, Ruta and Puig, Xavier and Markham, Andrew and Trigoni, Niki},
+  booktitle = {Proceedings of the Conference on Neural Information Processing Systems (NeurIPS)},
+  year      = {2025},
 }
 ```
 
