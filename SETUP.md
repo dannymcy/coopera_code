@@ -14,6 +14,11 @@ COOPERA depends on specific versions of `habitat-sim` and our forked `habitat-la
 ```bash
 git clone https://github.com/dannymcy/coopera_code.git
 cd coopera_code
+```
+
+## 2. Clone Our Forked Habitat-Lab
+
+```bash
 git clone https://github.com/dannymcy/habitat-lab.git habitat-lab
 ```
 
@@ -47,7 +52,7 @@ conda activate "$(pwd)/env"
 conda install -c conda-forge -c aihabitat-nightly habitat-sim=0.3.1 withbullet
 ```
 
-## 4. Install our Forked Habitat-Lab
+## 4. Install Our Forked Habitat-Lab
 
 ```bash
 cd habitat-lab
