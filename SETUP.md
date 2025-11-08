@@ -47,7 +47,7 @@ conda activate "$(pwd)/env"
 conda install -c conda-forge -c aihabitat-nightly habitat-sim=0.3.1 withbullet
 ```
 
-## 4. Install our forked Habitat-Lab
+## 4. Install our Forked Habitat-Lab
 
 ```bash
 cd habitat-lab
@@ -71,7 +71,7 @@ For CUDA 11.8 (what we used):
 pip install --no-cache-dir torch==2.5.1+cu118 torchvision==0.20.1+cu118 --index-url https://download.pytorch.org/whl/cu118
 ```
 
-## 6. Install remaining Python dependencies
+## 6. Install Remaining Python Dependencies
 
 ```bash
 pip install -r requirements.txt

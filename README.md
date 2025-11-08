@@ -49,7 +49,7 @@ See [BENCHMARK.md](BENCHMARK.md) for running the COOPERA benchmark.
 
 ### Related Repos
 
-We adapted some code from other repos in implementation. Please check these useful repos. 
+We adapted some code and resources from other repos in implementation. Please check these useful repos. 
 ```
 https://github.com/facebookresearch/habitat-lab
 https://github.com/facebookresearch/habitat-sim
