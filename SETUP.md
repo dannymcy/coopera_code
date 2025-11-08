@@ -9,8 +9,6 @@
 
 COOPERA depends on specific versions of `habitat-sim` and our forked `habitat-lab`. Please follow the steps below.
 
----
-
 ## 1. Clone the Repositories
 
 ```bash
