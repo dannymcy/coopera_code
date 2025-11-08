@@ -74,7 +74,7 @@ pip install --no-cache-dir torch==2.5.1+cu118 torchvision==0.20.1+cu118 --index-
 ## 6. Install remaining Python dependencies
 
 ```bash
-pip install --no-cache-dir torch==2.5.1+cu118 torchvision==0.20.1+cu118 --index-url https://download.pytorch.org/whl/cu118
+pip install -r requirements.txt
 ```
 
 ## 7. (Optional) Fix for pytorchvideo + newer torchvision
