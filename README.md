@@ -1,17 +1,19 @@
 # COOPERA: Continual Open-Ended Human-Robot Assistance
-This is the official implementation for the NeurIPS 2025 [paper](https://arxiv.org/abs/2403.13438).  
-For more information, please check the [project webpage](https://dannymcy.github.io/coopera/).
+This is the official implementation for the NeurIPS 2025 [paper](https://arxiv.org/abs/2403.13438). For more information, please check the [project webpage](https://dannymcy.github.io/coopera/).
 
-In this work, we introduce COOPERA, a framework for studying continual, open-ended human-robot collaboration.  
-COOPERA includes (a) simulated humans driven by psychological traits and long-term intentions,  
-(b) continuous human feedback, and (c) a benchmark and approach to personalize the robot's collaborative actions.
+In this work, we introduce COOPERA, a framework for studying continual, open-ended human-robot collaboration. COOPERA includes (a) simulated humans driven by psychological traits and long-term intentions, (b) continuous human feedback, and (c) a benchmark and approach to personalize the robot's collaborative actions.
 
-![COOPERA Teaser](assets/teaser.jpg)  
-*Continual human-robot collaboration for open-ended tasks over multiple days.*
+<p align="center">
+  <img src="assets/teaser.jpg" width="80%">
+  <br>
+  <b>Continual human-robot collaboration for open-ended tasks over multiple days.</b>
+</p>
 
-![COOPERA Framework](assets/framework.jpg)  
-*COOPERA: continual, open-ended human-robot collaboration framework.*
-
+<p align="center">
+  <img src="assets/framework.jpg" width="100%">
+  <br>
+  <b>COOPERA: continual, open-ended human-robot collaboration framework.</b>
+</p>
 
 
 <!-- ## Environment Setup
