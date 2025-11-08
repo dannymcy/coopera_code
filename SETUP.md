@@ -47,13 +47,12 @@ conda activate "$(pwd)/env"
 conda install -c conda-forge -c aihabitat-nightly habitat-sim=0.3.1 withbullet
 ```
 
-## 4. Install our forked Habitat-Lab (editable)
+## 4. Install our forked habitat-lab
 
 ```bash
 cd habitat-lab
 pip install -e .
 pip install -e habitat-baselines
-cd ..
 ```
 
 This installs the ```habitat-lab``` that COOPERA modifies.
