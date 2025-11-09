@@ -20,15 +20,15 @@ In this work, we introduce COOPERA, a framework for studying continual, open-end
 
 See [SETUP.md](SETUP.md) for instructions on setting up the conda environment.
 
-### Download Habitat Datasets
+## Download Habitat Datasets
 
 See [DOWNLOAD.md](DOWNLOAD.md) for downloading required Habitat datasets.
 
-### Human Simulation
+## Human Simulation
 
 See [HUMAN.md](HUMAN.md) for simulating humans driven by psychological traits and long-term intentions. This step is a prerequisite for running the COOPERA benchmark. You may also stop here if you are only interested in human simulation.
 
-### COOPERA Benchmark
+## COOPERA Benchmark
 
 See [BENCHMARK.md](BENCHMARK.md) for running the COOPERA benchmark.
 
@@ -36,7 +36,11 @@ See [BENCHMARK.md](BENCHMARK.md) for running the COOPERA benchmark.
 
 [Coming Soon] You may want to generate a video to visualize human-robot collaboration.
 
-### Citation
+## Support
+
+If you run into any issues, please open a new GitHub issue.
+
+## Citation
 
 ```
 @inproceedings{ma2025coopera,
@@ -47,7 +51,7 @@ See [BENCHMARK.md](BENCHMARK.md) for running the COOPERA benchmark.
 }
 ```
 
-### Related Repos
+## Related Repos
 
 We adapted some code and resources from other repos in implementation. Please check these useful repos. 
 ```
