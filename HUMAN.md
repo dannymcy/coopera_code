@@ -54,8 +54,11 @@ export QT_QPA_PLATFORM="offscreen"
 export TOKENIZERS_PARALLELISM="false"
 CUDA_VISIBLE_DEVICES="x,y,..." python coopera_main/human_sim/human_sim.py [OPTIONS]
 
-# Quickstart (configure parameters inside script)
+# Quickstart (configure parameters inside scripts)
 ./coopera_main/human_sim/human_sim_llm_inference_single.sh
+
+# or
+./coopera_main/human_sim/human_sim_llm_inference_parallel.sh
 ```
 
 **Options**
