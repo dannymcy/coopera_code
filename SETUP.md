@@ -1,6 +1,6 @@
 # Setup Instructions
 
-> **Tested Environment**
+> 🖥️ **Tested Environment**
 > - **OS:** Ubuntu 20.04  
 > - **CUDA:** 11.8  
 > - **GPUs:** 3× NVIDIA A10 (24GB)  

@@ -23,7 +23,7 @@ If you wish to simulate more humans, you may use the following datasets:
 
 1) **Facebook MyPersonality Datset**: Download from the [official archive](https://web.archive.org/web/20180428085315/http://mypersonality.org/wiki/doku.php?id=download_databases#datasets_available_without_registration) (find WCPR13, then the file “10,000 Facebook status updates of 250 users + personality + Facebook social network properties”) or from [here](https://drive.google.com/file/d/1FV10BkOWOmRfyTz1F_znz558eeyBsQe6/view?usp=drive_link). Place the `mypersonality_final.csv` file as: `/path/to/coopera_code/habitat-lab/data/humanoids/humanoid_data/mypersonality_final.csv`.
 
-⚠️Caution: This dataset contains real user information. We **do not** encourage its use. Read the [official ethics note](https://sites.google.com/michalkosinski.com/mypersonality) for more details.
+⚠️ Caution: This dataset contains real user information. We **do not** encourage its use. Read the [official ethics note](https://sites.google.com/michalkosinski.com/mypersonality) for more details.
 
 2) **Google: Synthetic-Persona-Chat Dataset**: Download from the [official repository](https://github.com/google-research-datasets/Synthetic-Persona-Chat) or from [here](https://drive.google.com/file/d/1OEhnUNFIkaFDZba9RtY_6PwcjcJ0831k/view?usp=sharing). Manually create the human description paragraph and Big-5 personality scores following the procedures described in our paper (Sections 3.2, Appendix C, and F). Afterward, overwrite the variables `profile_string_list` and `big_five_list` in `/path/to/coopera_code/habitat-lab/coopera_main/human_sim/human_sim.py` (see below Part 5: Simulating Humans).
 
@@ -41,11 +41,13 @@ To generate new episode datasets (i.e., adding more dynamic objects into scenes 
 python -u habitat-lab/habitat/datasets/rearrange/run_episode_generator.py
 ```
 
-⚠️The full episode generation process involves multiple steps: setting parameters, moving the generated folder `episode_datasets` from `/path/to/coopera_code/habitat-lab/data/hab3_bench_assets` to `/path/to/coopera_code/habitat-lab/data/scene_datasets/hssd-hab`, and manually updating the path keys in the generated JSON files. There are also multiple reports from users that different Habitat versions may cause errors during this process, making it difficult to reproduce reliably.
+⚠️ The full episode generation process involves multiple steps: setting parameters, moving the generated folder `episode_datasets` from `/path/to/coopera_code/habitat-lab/data/hab3_bench_assets` to `/path/to/coopera_code/habitat-lab/data/scene_datasets/hssd-hab`, and manually updating the path keys in the generated JSON files. There are also multiple reports from users that different Habitat versions may cause errors during this process, making it difficult to reproduce reliably.
 
 Thus, we recommend downloading our pre-generated and modified episode datasets instead. Download from [this link](https://drive.google.com/file/d/1-LKntbaHxZ3YIGRVPdUVe36QV2-FKtG4/view?usp=drive_link) and [this link](https://drive.google.com/file/d/1SY_rwBX2zhhKLmhotU0roozg4jER82yE/view?usp=sharing). Place the folders as follows: `/path/to/coopera_code/habitat-lab/data/scene_datasets/hssd-hab/episode_datasets`, `/path/to/coopera_code/habitat-lab/data/scene_datasets/hssd-hab/episode_datasets_dynamic`.
 
 ## 5. Simulate Humans
+
+🖥️ If using local Llama inference, the minimum requirement is two GPUs with at least 24 GB VRAM each.
 
 ```bash
 export QT_QPA_PLATFORM="offscreen"
