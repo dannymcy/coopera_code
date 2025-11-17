@@ -50,7 +50,7 @@ Thus, we recommend downloading our pre-generated and modified episode datasets i
 ```bash
 export QT_QPA_PLATFORM="offscreen"
 export TOKENIZERS_PARALLELISM="false"
-CUDA_VISIBLE_DEVICES="X,Y,..." python coopera_main/human_sim/human_sim.py [OPTIONS]
+CUDA_VISIBLE_DEVICES="x,y,..." python coopera_main/human_sim/human_sim.py [OPTIONS]
 ```
 
 **Options**
@@ -70,5 +70,5 @@ CUDA_VISIBLE_DEVICES="X,Y,..." python coopera_main/human_sim/human_sim.py [OPTIO
 - `--profile-indices i j k` - Process only these profile indices
 
 **GPU**
-- `CUDA_VISIBLE_DEVICES="X,Y"` - GPUs visible to system
-- `--gpu-id N` - Single GPU for Habitat simulation and semantic similarity (default: 0)
+- `CUDA_VISIBLE_DEVICES="x,y"` - GPUs visible to system
+- `--gpu-id n` - Single GPU ID for Habitat simulation and computing semantic similarity (default: 0)
