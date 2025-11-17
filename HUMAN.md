@@ -27,5 +27,22 @@ If you wish to simulate more diverse humans, you may use the following datasets:
 
 2) **Google: Synthetic-Persona-Chat Dataset**: Download from the [official repository](https://github.com/google-research-datasets/Synthetic-Persona-Chat) or from [here](https://drive.google.com/file/d/1OEhnUNFIkaFDZba9RtY_6PwcjcJ0831k/view?usp=sharing). Manually create the human description paragraph and Big-5 personality scores following the procedures described in our paper (Sections 3.2, Appendix C, and F). Afterward, overwrite the variables `profile_string_list` and `big_five_list` in `/path/to/coopera_code/habitat-lab/coopera_main/human_sim/human_sim.py` (see below).
 
-## 4. Simulating Humans
+## 4. Generate Dynamic Scenes and Episode Datasets
 
+To create dynamic Habitat Synthetic Scenes for collaboration type 1, run the following command (see paper Sections 4.1 and Appendix B for details):
+
+```bash
+python coopera_main/create_dynamic_hssd.py
+```
+
+To generate new episode datasets (i.e., adding more dynamic objects into scenes from the YCB dataset), as described in paper Section 4.1, follow the [offifical instruction](https://huggingface.co/datasets/ai-habitat/hab3_bench_assets) and run:
+
+```bash
+python -u habitat-lab/habitat/datasets/rearrange/run_episode_generator.py
+```
+
+⚠️The full episode generation process involves multiple steps: setting parameters, moving the generated folder `episode_datasets` from `/path/to/coopera_code/habitat-lab/data/hab3_bench_assets` to `/path/to/coopera_code/habitat-lab/data/scene_datasets/hssd-hab`, and manually updating the path keys in the generated JSON files. There are also multiple reports from users that different Habitat versions may cause errors during this process, making it difficult to reproduce reliably.
+
+Thus, we recommend downloading our pre-generated and modified episode datasets instead. Download from [this link](www.google.com) and place the folders as follows: `/path/to/coopera_code/habitat-lab/data/scene_datasets/hssd-hab/episode_datasets`, `/path/to/coopera_code/habitat-lab/data/scene_datasets/hssd-hab/episode_datasets_dynamic`.
+
+## 5. Simulating Humans
