@@ -20,6 +20,9 @@ You can find the list of available dataset UIDs here:
 # Make sure you are in your COOPERA Habitat-Lab directory:
 cd /path/to/coopera_code/habitat-lab
 
+# Update Git LFS
+git lfs install
+
 # Habitat Synthetic Scene Dataset (HSSD)
 python -m habitat_sim.utils.datasets_download --uids hssd-hab --data-path data/
 
