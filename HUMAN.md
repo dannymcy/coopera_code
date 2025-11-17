@@ -25,7 +25,7 @@ If you wish to simulate more diverse humans, you may use the following datasets:
 
 ⚠️Caution: This dataset contains real user information. We **do not** encourage its use. Read the [official ethics note](https://sites.google.com/michalkosinski.com/mypersonality) for more details.
 
-2) **Google: Synthetic-Persona-Chat Dataset**: Download from the [official repository](https://github.com/google-research-datasets/Synthetic-Persona-Chat) or from [here](https://drive.google.com/file/d/1OEhnUNFIkaFDZba9RtY_6PwcjcJ0831k/view?usp=sharing). Manually create the human description paragraph and Big-5 personality scores following the procedures described in our paper (Sections 3.2, Appendix C, and F). Afterward, overwrite the variables `profile_string_list` and `big_five_list` in `/path/to/coopera_code/habitat-lab/coopera_main/human_sim/human_sim.py` (see below).
+2) **Google: Synthetic-Persona-Chat Dataset**: Download from the [official repository](https://github.com/google-research-datasets/Synthetic-Persona-Chat) or from [here](https://drive.google.com/file/d/1OEhnUNFIkaFDZba9RtY_6PwcjcJ0831k/view?usp=sharing). Manually create the human description paragraph and Big-5 personality scores following the procedures described in our paper (Sections 3.2, Appendix C, and F). Afterward, overwrite the variables `profile_string_list` and `big_five_list` in `/path/to/coopera_code/habitat-lab/coopera_main/human_sim/human_sim.py` (see below Part 5: Simulating Humans).
 
 ## 4. Generate Dynamic Scenes and Episode Datasets
 
@@ -43,6 +43,31 @@ python -u habitat-lab/habitat/datasets/rearrange/run_episode_generator.py
 
 ⚠️The full episode generation process involves multiple steps: setting parameters, moving the generated folder `episode_datasets` from `/path/to/coopera_code/habitat-lab/data/hab3_bench_assets` to `/path/to/coopera_code/habitat-lab/data/scene_datasets/hssd-hab`, and manually updating the path keys in the generated JSON files. There are also multiple reports from users that different Habitat versions may cause errors during this process, making it difficult to reproduce reliably.
 
-Thus, we recommend downloading our pre-generated and modified episode datasets instead. Download from [this link](www.google.com) and place the folders as follows: `/path/to/coopera_code/habitat-lab/data/scene_datasets/hssd-hab/episode_datasets`, `/path/to/coopera_code/habitat-lab/data/scene_datasets/hssd-hab/episode_datasets_dynamic`.
+Thus, we recommend downloading our pre-generated and modified episode datasets instead. Download from [this link](https://drive.google.com/file/d/1-LKntbaHxZ3YIGRVPdUVe36QV2-FKtG4/view?usp=drive_link) and [this link](https://drive.google.com/file/d/1SY_rwBX2zhhKLmhotU0roozg4jER82yE/view?usp=sharing). Place the folders as follows: `/path/to/coopera_code/habitat-lab/data/scene_datasets/hssd-hab/episode_datasets`, `/path/to/coopera_code/habitat-lab/data/scene_datasets/hssd-hab/episode_datasets_dynamic`.
 
 ## 5. Simulating Humans
+
+```bash
+export QT_QPA_PLATFORM="offscreen"
+export TOKENIZERS_PARALLELISM="false"
+CUDA_VISIBLE_DEVICES="X,Y,..." python coopera_main/human_sim/human_sim.py [OPTIONS]
+```
+
+**Options**
+**Core Configuration**
+- `--use-gpt-human [True/False]` - Use GPT or Llama for human simulation (default: true)
+- `--start-logic-human [True/False]` - Restart human simulation (default: true)
+- `--collab-type [1/2]` - Collaboration type (default: 2)
+
+**Loop Limits**
+- `--max-scenes N` - Stop after N scenes (default: 5)
+- `--max-profiles N` - Stop after N profiles (default: 10)
+- `--max-days N` - Stop after N days (default: 5)
+
+**Specific Processing**
+- `--scene-indices i j k` - Process only these scene indices
+- `--profile-indices i j k` - Process only these profile indices
+
+**GPU**
+- `CUDA_VISIBLE_DEVICES="X,Y"` - GPUs visible to system
+- `--gpu-id N` - Single GPU for Habitat simulation and semantic similarity (default: 0)
