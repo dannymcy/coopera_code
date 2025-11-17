@@ -57,3 +57,6 @@ We adapted some code and resources from other repos in implementation. Please ch
 ```
 https://github.com/facebookresearch/habitat-lab
 https://github.com/facebookresearch/habitat-sim
+https://github.com/IDEA-Research/Motion-X
+https://github.com/google-research-datasets/Synthetic-Persona-Chat
+```
