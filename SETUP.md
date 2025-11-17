@@ -32,7 +32,7 @@ coopera_code/
 └── ...
 ```
 
-## 2. Create and Activate Conda Environment
+## 3. Create and Activate Conda Environment
 
 ```bash
 conda create -n coopera python=3.9 cmake=3.14.0
@@ -46,13 +46,13 @@ conda create --prefix "$(pwd)/env" python=3.9 cmake=3.14.0
 conda activate "$(pwd)/env"
 ```
 
-## 3. Install Habitat-Sim
+## 4. Install Habitat-Sim
 
 ```bash
 conda install -c conda-forge -c aihabitat-nightly habitat-sim=0.3.1 withbullet
 ```
 
-## 4. Install Our Forked Habitat-Lab
+## 5. Install Our Forked Habitat-Lab
 
 ```bash
 cd habitat-lab
@@ -68,7 +68,7 @@ This installs the ```habitat-lab``` that COOPERA modifies.
 pip uninstall tensorboard -y
 ```
 
-## 5. Install PyTorch (remember to match your CUDA version)
+## 6. Install PyTorch (remember to match your CUDA version)
 
 For CUDA 11.8 (what we used):
 
@@ -76,13 +76,13 @@ For CUDA 11.8 (what we used):
 pip install --no-cache-dir torch==2.5.1+cu118 torchvision==0.20.1+cu118 --index-url https://download.pytorch.org/whl/cu118
 ```
 
-## 6. Install Remaining Python Dependencies
+## 7. Install Remaining Python Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## 7. (Optional) Fix for pytorchvideo + newer torchvision
+## 8. (Optional) Fix for pytorchvideo + newer torchvision
 
 Some environments produce:
 

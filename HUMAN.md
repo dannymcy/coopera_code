@@ -45,7 +45,7 @@ python -u habitat-lab/habitat/datasets/rearrange/run_episode_generator.py
 
 Thus, we recommend downloading our pre-generated and modified episode datasets instead. Download from [this link](https://drive.google.com/file/d/1-LKntbaHxZ3YIGRVPdUVe36QV2-FKtG4/view?usp=drive_link) and [this link](https://drive.google.com/file/d/1SY_rwBX2zhhKLmhotU0roozg4jER82yE/view?usp=sharing). Place the folders as follows: `/path/to/coopera_code/habitat-lab/data/scene_datasets/hssd-hab/episode_datasets`, `/path/to/coopera_code/habitat-lab/data/scene_datasets/hssd-hab/episode_datasets_dynamic`.
 
-## 5. Simulating Humans
+## 5. Simulate Humans
 
 ```bash
 export QT_QPA_PLATFORM="offscreen"
