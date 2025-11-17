@@ -53,6 +53,9 @@ Thus, we recommend downloading our pre-generated and modified episode datasets i
 export QT_QPA_PLATFORM="offscreen"
 export TOKENIZERS_PARALLELISM="false"
 CUDA_VISIBLE_DEVICES="x,y,..." python coopera_main/human_sim/human_sim.py [OPTIONS]
+
+# Quickstart (configure parameters inside script)
+./coopera_main/human_sim/human_sim_llm_inference_single.sh
 ```
 
 **Options**
@@ -74,3 +77,6 @@ CUDA_VISIBLE_DEVICES="x,y,..." python coopera_main/human_sim/human_sim.py [OPTIO
 **GPU**
 - `CUDA_VISIBLE_DEVICES="x,y"` - GPUs visible to system
 - `--gpu-id n` - Single GPU ID for Habitat simulation and computing semantic similarity (default: 0)
+
+## 6. Execute and Render Human Tasks
+
