@@ -35,7 +35,7 @@ To create dynamic Habitat Synthetic Scenes for collaboration type 1, run the fol
 python coopera_main/create_dynamic_hssd.py
 ```
 
-To generate new episode datasets (i.e., adding more dynamic objects into scenes from the YCB dataset), as described in paper Section 4.1, follow the [offifical instruction](https://huggingface.co/datasets/ai-habitat/hab3_bench_assets) and run:
+To generate new episode datasets (i.e., adding more dynamic objects into scenes from the YCB dataset), as described in paper Section 4.1, follow the [official instruction](https://huggingface.co/datasets/ai-habitat/hab3_bench_assets) and run:
 
 ```bash
 python -u habitat-lab/habitat/datasets/rearrange/run_episode_generator.py
