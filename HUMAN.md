@@ -54,6 +54,7 @@ CUDA_VISIBLE_DEVICES="X,Y,..." python coopera_main/human_sim/human_sim.py [OPTIO
 ```
 
 **Options**
+
 **Core Configuration**
 - `--use-gpt-human [True/False]` - Use GPT or Llama for human simulation (default: true)
 - `--start-logic-human [True/False]` - Restart human simulation (default: true)
