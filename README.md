@@ -38,17 +38,17 @@ See [BENCHMARK.md](BENCHMARK.md) for running the COOPERA benchmark.
 
 ```bash
 # Human skills
-walk_to(...)
-pick_up_human(...)
-move_hand_and_place(...)
-customized_humanoid_motion(...)
-execute_humanoid_1(...)
-execute_humanoid_2(...)
+walk_to
+pick_up_human
+move_hand_and_place
+customized_humanoid_motion
+execute_humanoid_1
+execute_humanoid_2
 
 # Robot skills
-walk_to_robot(...)
-pick_up_robot(...)
-place_robot(...)
+walk_to_robot
+pick_up_robot
+place_robot
 ```
 
 ## Support
