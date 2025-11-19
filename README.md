@@ -34,7 +34,7 @@ See [BENCHMARK.md](BENCHMARK.md) for running the COOPERA benchmark.
 
 ## Visualize Human–Robot Collaboration
 
-[Coming Soon] You may want to generate videos to visualize human–robot collaboration. We already defined skill primitives in `/coopera_main/skill_utils.py`. Available primitives include:
+[Coming Soon] You may want to generate videos to visualize human–robot collaboration. We already defined skill primitives in `/path/to/coopera_code/coopera_main/skill_utils.py`. Available primitives include:
 
 ```bash
 # Human skills
@@ -50,6 +50,8 @@ walk_to_robot
 pick_up_robot
 place_robot
 ```
+
+You can adjust rendering parameters in `/path/to/coopera_code/habitat-lab/habitat/config/default_structured_configs.py`.
 
 ## Support
 
