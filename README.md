@@ -32,9 +32,24 @@ See [HUMAN.md](HUMAN.md) for simulating humans driven by psychological traits an
 
 See [BENCHMARK.md](BENCHMARK.md) for running the COOPERA benchmark.
 
-## Visualize Results
+## Visualize Human–Robot Collaboration
 
-[Coming Soon] You may want to generate a video to visualize human-robot collaboration.
+[Coming Soon] You may want to generate videos to visualize human–robot collaboration. We already defined skill primitives in `/coopera_main/skill_utils.py`. Available primitives include:
+
+```bash
+# Human skills
+walk_to
+pick_up_human
+move_hand_and_place
+customized_humanoid_motion
+execute_humanoid_1
+execute_humanoid_2
+
+# Robot skills
+walk_to_robot
+pick_up_robot
+place_robot
+```
 
 ## Support
 

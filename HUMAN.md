@@ -57,7 +57,7 @@ CUDA_VISIBLE_DEVICES="x,y,..." python coopera_main/human_sim/human_sim.py [OPTIO
 # Quickstart (configure parameters inside scripts)
 ./coopera_main/human_sim/human_sim_llm_inference_single.sh
 
-# or
+# or simulate across multiple scenes in parallel
 ./coopera_main/human_sim/human_sim_llm_inference_parallel.sh
 ```
 
@@ -83,3 +83,12 @@ CUDA_VISIBLE_DEVICES="x,y,..." python coopera_main/human_sim/human_sim.py [OPTIO
 
 ## 6. Execute and Render Human Tasks
 
+To generate videos of the human performing the first task at each hour, allowing the robot to observe human actions and predict assistance tasks, run:
+
+```bash
+# Quickstart (configure parameters inside scripts)
+./coopera_main/human_sim/human_sim_render_single.sh
+
+# or execute and render across multiple scenes in parallel
+./coopera_main/human_sim/human_sim_render_parallel.sh
+```
