@@ -47,7 +47,7 @@ Thus, we recommend downloading our pre-generated and modified episode datasets i
 
 ## 5. Simulate Humans
 
-🖥️ If using local Llama inference, the minimum requirement is two GPUs with at least 24 GB VRAM each.
+🖥️ If using local Llama inference, the minimum requirement is 2x GPUs with at least 24 GB VRAM each.
 
 ```bash
 export QT_QPA_PLATFORM="offscreen"

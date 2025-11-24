@@ -178,3 +178,4 @@ xgrammar==0.1.11
 xxhash==3.5.0
 yacs==0.1.8
 yarl==1.15.1
+stopit==1.1.2
