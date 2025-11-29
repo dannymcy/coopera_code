@@ -26,13 +26,13 @@ CUDA_VISIBLE_DEVICES="x,y,..." python coopera_main/benchmark/main.py [OPTIONS]
 ## Baselines
 ```bash
 # Direct Prompting
-# [Coming Soon]
+CUDA_VISIBLE_DEVICES="x,y,..." python coopera_main/benchmark/prompting.py [OPTIONS]
 
 # Direct Finetuning
 # [Coming Soon]
 
 # Oracle
-# [Coming Soon]
+CUDA_VISIBLE_DEVICES="x,y,..." python coopera_main/benchmark/oracle.py [OPTIONS]
 
 # Random
 # [Coming Soon]
@@ -41,5 +41,5 @@ CUDA_VISIBLE_DEVICES="x,y,..." python coopera_main/benchmark/main.py [OPTIONS]
 # [Coming Soon]
 
 # Human & Context Agnostic
-# [Coming Soon]
+CUDA_VISIBLE_DEVICES="x,y,..." python coopera_main/benchmark/ag_human.py [OPTIONS]
 ```
